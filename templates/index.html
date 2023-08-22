@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Productos</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+<h1> Productos</h1>
+<a class="button button-primary" href="{{ url_for('agregar_producto') }}">Agregar Producto</a>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Acciones</th>
+    </tr>
+    {% for producto in productos %}
+    <tr>
+        <td>{{ producto[0] }}</td>
+        <td>{{ producto[1] }}</td>
+        <td>{{ producto[2] }}</td>
+        <td>
+            <a class="button button-edit" href="{{ url_for('editar_producto', id=producto[0]) }}">Editar</a>
+            <a class="button button-delete" href="{{ url_for('eliminar_producto', id=producto[0]) }}">Eliminar</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
+

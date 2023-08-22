@@ -1,0 +1,123 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Espacio entre los elementos */
+    align-items: start; /* Alineación vertical superior */
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para los formularios */
+form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos para los botones */
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.button-primary {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.button-primary:hover {
+    background-color: #2980b9;
+}
+
+.button-edit {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.button-edit:hover {
+    background-color: #27ae60;
+}
+
+.button-delete {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.button-delete:hover {
+    background-color: #c0392b;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+.add-product-form {
+    grid-column: 1; /* Mostrar el formulario en la primera columna */
+    padding: 20px; /* Espacio interno para el formulario */
+    background-color: #f0f0f0; /* Color de fondo para el formulario */
+}
